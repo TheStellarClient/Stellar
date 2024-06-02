@@ -19,7 +19,7 @@ const createWindow = () => {
     icon: path.join(__dirname, 'assets', 'images', 'stellar.png'),
   });
 
-  mainWindow.loadFile(path.join(__dirname, 'index.html'));
+  mainWindow.loadFile(path.join(__dirname, 'pages/play.html'));
 
   mainWindow.webContents.on('did-finish-load', () => {
     mainWindow.webContents.executeJavaScript(`
